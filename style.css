@@ -1,0 +1,371 @@
+
+/* =================================
+   PURPLE FLORAL PERSONAL WEBSITE
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #faf5ff;
+    color: #51415f;
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #8e6bb3, #c6a6dc);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid #ead8f5;
+}
+
+header h1 {
+    font-size: 34px;
+    letter-spacing: 3px;
+    margin: 8px 0;
+}
+
+header p {
+    font-size: 16px;
+}
+
+.flower {
+    font-size: 27px;
+    margin: 5px;
+}
+
+/* NAVIGATION */
+
+nav {
+    background-color: #6e508c;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 17px;
+    margin: 3px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #e5d0f3;
+    color: #56386f;
+}
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: #8056a5;
+    font-size: 28px;
+    margin: 35px 0 25px;
+}
+
+.section-title::after {
+    content: " ❀";
+    color: #bc8bd5;
+}
+
+/* HOME PAGE */
+
+.hero {
+    background: #fffaff;
+    text-align: center;
+    padding: 35px;
+    border: 2px solid #dfc6ef;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px #d9c2e655;
+}
+
+.hero img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #e5d0f3;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    color: #8056a5;
+    margin-bottom: 15px;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    background: #9872b9;
+    color: white;
+    text-decoration: none;
+    padding: 11px 25px;
+    margin-top: 20px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #684587;
+    transform: scale(1.05);
+}
+
+/* PROFILE */
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: #fffaff;
+    border: 2px solid #dfc6ef;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 5px 15px #d9c2e655;
+}
+
+.profile img {
+    width: 250px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid #ead8f5;
+}
+
+.profile h2,
+.profile h3 {
+    color: #8056a5;
+    margin-bottom: 10px;
+}
+
+/* CARDS */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #fffaff;
+    border: 2px solid #ead8f5;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 12px #d9c2e655;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 18px #c5a6dc77;
+}
+
+.card h3 {
+    color: #8056a5;
+    margin-bottom: 12px;
+}
+
+.card a {
+    display: inline-block;
+    color: #9872b9;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* CONTENT BOX */
+
+.content-box {
+    background: #fffaff;
+    padding: 28px;
+    margin: 25px 0;
+    border-left: 5px solid #a77bc8;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #d9c2e633;
+}
+
+.content-box h2 {
+    color: #8056a5;
+    margin-bottom: 15px;
+}
+
+.content-box ul {
+    padding-left: 25px;
+}
+
+/* EDUCATION TIMELINE */
+
+.timeline {
+    border-left: 4px solid #b18aca;
+    margin: 20px 0 20px 20px;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item::before {
+    content: "✿";
+    position: absolute;
+    left: -44px;
+    top: 5px;
+    background: #faf5ff;
+    color: #9872b9;
+    font-size: 23px;
+}
+
+.timeline-content {
+    background: #fffaff;
+    border: 2px solid #ead8f5;
+    border-radius: 15px;
+    padding: 22px;
+    box-shadow: 0 4px 10px #d9c2e655;
+}
+
+.timeline-content h3 {
+    color: #8056a5;
+    margin-bottom: 10px;
+}
+
+/* HOBBIES GALLERY */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.gallery-item {
+    background: #fffaff;
+    border: 2px solid #ead8f5;
+    padding: 15px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 12px #d9c2e655;
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.04);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border: 4px solid #ead8f5;
+    border-radius: 13px;
+}
+
+.gallery-item h3 {
+    color: #8056a5;
+    margin: 12px 0 5px;
+}
+
+/* SKILLS */
+
+.skill {
+    margin: 18px 0;
+}
+
+.skill p {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.skill-bar {
+    background: #eadcf3;
+    height: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-bar div {
+    background: linear-gradient(90deg, #9872b9, #d2a9e9);
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    line-height: 25px;
+    border-radius: 20px;
+}
+
+/* LINKS */
+
+main a {
+    color: #8056a5;
+}
+
+main a:hover {
+    color: #56386f;
+}
+
+/* FOOTER */
+
+footer {
+    background: #6e508c;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #f4dcff;
+    text-decoration: none;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width: 700px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile img {
+        width: 200px;
+        height: 220px;
+    }
+
+    main {
+        padding: 12px;
+    }
+}
